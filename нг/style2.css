@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0a1f33, #1a3a55);
+  color: #e0f7fa;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+.header{
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background-image: url(img/кр7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+}
+.container{
+  height: 2px;
+  background-color: #ffffff;
+  width: 95%;
+  margin: 0 auto;
+}
+.header_list{
+  display: flex;
+  margin-left: 33%;
+  margin-top: 2%;
+}
+.header_item{
+  list-style: none;
+  margin-left: 4%;
+    color: #80deea;
+  text-shadow: 0 0 15px rgba(128, 222, 234, 0.6);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.header_title {
+  font-size: 2rem;
+  color: #80deea;
+  text-shadow: 0 0 15px rgba(128, 222, 234, 0.6);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+.section_main2{
+    max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.main_text{
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.container_act{
+    margin-top: 5%;
+}
+.title_main{
+    color: #80deea;
+  text-shadow: 0 0 15px rgba(128, 222, 234, 0.6);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.container_main3{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+.title_footer {
+  color: #4fc3f7;
+  font-size: 2rem;
+  text-shadow: 0 0 12px rgba(79, 195, 247, 0.7);
+  font-weight: bold;
+}
+.footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background-image: url(img/кр6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.8); /* Черный цвет с прозрачностью 50% (можно менять) */
+  z-index: -1; /* 
+}
+
+
+
+
+
+
+
+
+/* Снежинки как псевдоэлементы */
+body::before, body::after, .header::before {
+  content: '❅';
+  position: fixed;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 3rem;
+  animation: snowfall 15s linear infinite;
+}
+
+body::before { left: 5%; top: 10%; animation-delay: 0s; }
+body::after { right: 8%; top: 30%; animation-delay: 7s; }
+.header::before { left: 25%; top: 40%; animation-delay: 3s; }
+
+@keyframes snowfall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(120vh) rotate(720deg); opacity: 0; }
+}
+
+/* Лёгкое свечение текста */
+h2 {
+  filter: drop-shadow(0 0 5px rgba(79, 195, 247, 0.4));
+}
